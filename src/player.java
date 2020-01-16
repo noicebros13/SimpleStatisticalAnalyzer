@@ -9,11 +9,11 @@ public class player {
 		myBA = BA;
 	}
 	
-	public double getMyBA() {
+	public double getBA() {
 		return myBA;
 	}
 	
-	public void setMyBA(double newBA) {
+	public void setBA(double newBA) {
 		myBA = newBA;
 	}
 	
@@ -26,6 +26,7 @@ public class player {
 	}
 	
 	public String toString() {
-		return "" + myName + "\t" + myBA;
+		System.out.println("Name:\t  BA:");
+		return "" + myName + "\t  " + myBA;
 	}
 }
