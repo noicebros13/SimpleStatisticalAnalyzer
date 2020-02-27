@@ -3,10 +3,12 @@ public class player {
 	//local vars
 	String myName;
 	double myBA;
+	String myPosition;
 	
-	public player(String name, double BA) {
+	public player(String name, double BA, String position) {
 		myName = name;
 		myBA = BA;
+		myPosition = position;
 	}
 	
 	public double getBA() {
@@ -25,8 +27,15 @@ public class player {
 		myName = newName;
 	}
 	
+	public String getPosition() {
+		return myPosition;
+	}
+	
+	public void setPosition(String position) {
+		myPosition = position;
+	}
+	
 	public String toString() {
-		System.out.println("Name:\t  BA:");
 		return "" + myName + "\t  " + myBA;
 	}
 }
